@@ -1,0 +1,16 @@
+name: frist workflow
+
+
+on: 
+  push:
+    branches:
+      - main
+
+
+jobs:
+  example-job:
+    runs-on: utuntu-latest
+
+    steps:
+      - name: print a welcome massage
+        run: echo "welcome"
