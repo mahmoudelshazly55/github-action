@@ -1,23 +1,20 @@
-name: frist workflow
+name: first workflow
 
-
-on: 
+on:
   push:
     branches:
       - main
 
-
 jobs:
   example-job:
-    runs-on: utuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - name: print a welcome massage
+      - name: Print a welcome message
         run: echo "welcome"
 
-
       - name: Checkout repository
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v4
 
-      - name: list repostory files
-        run: ls-la
+      - name: List repository files
+        run: ls -la
